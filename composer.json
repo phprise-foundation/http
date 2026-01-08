@@ -1,0 +1,47 @@
+{
+    "name": "phprise/http",
+    "description": "The HTTP Client component applying the OTAKU philosophy and following the PSR-12, PSR-7, PSR-15, PSR-18 e PSR-14.",
+    "type": "library",
+    "require": {
+        "php": "^8.4",
+        "phprise/common-contract": "^1.0",
+        "phprise/common-value-object": "^1.0",
+        "psr/http-message": "^2.0",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.1",
+        "psr/event-dispatcher": "^1.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/http-server-middleware": "^1.0",
+        "php-http/promise": "^1.3",
+        "phprise/data-transfer-object": "^1.1",
+        "php-http/httplug": "^2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5",
+        "vimeo/psalm": "^6.14",
+        "infection/infection": "^0.32.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phprise\\Http\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phprise\\Http\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Esdras Schonevald",
+            "email": "esdras.schonevald@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "infection/extension-installer": true
+        }
+    }
+}
