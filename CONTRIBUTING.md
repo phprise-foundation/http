@@ -1,6 +1,6 @@
-# Contributing to PHPRise HTTP
+# Contributing to PHPRise <Repository>
 
-Thank you for considering contributing to PHPRise HTTP! The contribution guidelines are as follows:
+Thank you for considering contributing to PHPRise <Repository>! The contribution guidelines are as follows:
 
 ## Code of Conduct
 
@@ -21,10 +21,11 @@ This project and everyone participating in it is governed by the [Code of Conduc
 ### Pull Requests
 
 1. Fork the repo and follow the [Gitflow](GITFLOW.md).
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code follows the strict style guide below.
+2. **Assembly Focus**: This is a metapackage. Do not add logic files in `src/`.
+3. **Dependencies**: Manage orchestration via `composer.json`.
+4. **No Tests**: Logic tests belong to Atomic Repositories, not here.
+5. If you've updated the aggregated components, update the documentation.
+6. Make sure your changes follow the strict metadata standards.
 
 ## Style Guide & Architecture
 
